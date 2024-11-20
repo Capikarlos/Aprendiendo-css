@@ -1,0 +1,83 @@
+/*Selector Universal*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Este es un comentario de CSS*/
+body{
+    background-color: rgb(199, 154, 114);
+}
+
+main{
+    /*Ajustar las tarjetas a varias lineas*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1{
+    color: rgb(199, 73, 73);
+}
+
+/*Las clases empiezan con .nombreClase
+y sirven para reutilizar la funcion/estilos*/
+.tarjeta{
+    width: 230px;
+    background-color: rgb(255, 253, 183);
+    border-radius: 3%;
+    /*Centrando elementos*/
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+    transition: all 0.5s ease-in-out; 
+}
+
+.tarjeta:hover{
+    background-color: rgb(91, 88, 29);
+    transform: scale(1.05);
+    transform: rotate(3deg);
+}
+
+.tarjeta .imagen{
+    width: 180px;
+}
+
+.tarjeta img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.tarjeta p{
+    color: rgb(18, 72, 92);
+    font-size: 20px;
+}
+
+/*Selector de ID
+es unico (algo que no se puede repetir)*/
+#mole{
+    color: brown;
+}
+
+#chocolate{
+    color: chocolate;
+}
+
+#tlayuda{
+    color: rgb(106, 106, 23);
+}
+
+#tamales{
+    color: rgb(78, 51, 0);
+}
+
+#tejate{
+    color: rgb(223, 141, 27);
+}
+
+#piedra{
+    color: rgb(26, 26, 5);
+}
