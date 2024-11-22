@@ -2,11 +2,23 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-/*Este es un comentario de CSS*/
+/*El estilo de letra de https://fonts.google.com/*/
+.cabin-letra {
+    font-family: "Cabin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 40;
+    font-style: normal;
+    font-variation-settings:
+"wdth" 100;
+}
+/*Body va afectar todos los elementos*/
 body{
     background-color: rgb(199, 154, 114);
+    font-family: "Cabin", sans-serif;
+    font-weight: 50;
+    font-style: normal;
 }
 
 main{
@@ -16,13 +28,14 @@ main{
 }
 
 h1{
-    color: rgb(199, 73, 73);
+    color: rgb(124, 27, 27);
 }
 
 /*Las clases empiezan con .nombreClase
 y sirven para reutilizar la funcion/estilos*/
 .tarjeta{
-    width: 230px;
+    width: 215px;
+    height: 550px;
     background-color: rgb(255, 253, 183);
     border-radius: 3%;
     /*Centrando elementos*/
@@ -31,12 +44,18 @@ y sirven para reutilizar la funcion/estilos*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 7px;
+    margin: 7px; /*Tambien se puede ver como margin: 6px 6px 6px 6px; */
+    padding: 10px;
+    border: 3px solid black;
     transition: all 0.5s ease-in-out; 
 }
 
+.titulo-tarjeta{
+    margin-bottom: 10px;
+}
+
 .tarjeta:hover{
-    background-color: rgb(91, 88, 29);
+    background-color: rgb(250, 255, 109);
     transform: scale(1.05);
     transform: rotate(3deg);
 }
@@ -46,7 +65,9 @@ y sirven para reutilizar la funcion/estilos*/
 }
 
 .tarjeta img{
-    width: 100%;
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 5%;
 }
@@ -56,8 +77,7 @@ y sirven para reutilizar la funcion/estilos*/
     font-size: 20px;
 }
 
-/*Selector de ID
-es unico (algo que no se puede repetir)*/
+/*Selector de ID es unico (algo que no se puede repetir)*/
 #mole{
     color: brown;
 }
